@@ -7,6 +7,7 @@ import getIcon from './utils/iconUtils';
 // Import pages
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import CustomizeShirt from './pages/CustomizeShirt';
 
 // Icon declarations
 const SunIcon = getIcon('Sun');
@@ -65,6 +66,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/customize" element={<CustomizeShirt />} />
           </Routes>
         </AnimatePresence>
       </main>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import MainFeature from '../components/MainFeature';
 import getIcon from '../utils/iconUtils';
@@ -61,9 +62,9 @@ export default function Home() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <a href="#design-tool" className="btn-primary w-full sm:w-auto">
+              <Link to="/customize" className="btn-primary w-full sm:w-auto">
                 Start Designing Now
-              </a>
+              </Link>
               <div className="text-sm text-surface-500 dark:text-surface-400">
                 {designCount > 0 ? `${designCount} design${designCount > 1 ? 's' : ''} created today` : 'No designs created yet'}
               </div>
