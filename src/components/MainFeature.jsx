@@ -76,5 +76,4 @@ export default function MainFeature({ onSaveDesign }) {
         </div>
       </div>
     </div>
-    </div>
   );
